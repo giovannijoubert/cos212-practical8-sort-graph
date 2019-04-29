@@ -1,15 +1,16 @@
 /**
- * Name:
- * Student Number:
+ * Name: Giovanni Joubert
+ * Student Number: u18009035
  */
 
 public class GraphSelectionSort {
-
+    Edge[] myEdges;
     /**
      * Initialize a new object using the array of Edges
      */
     public GraphSelectionSort(Edge[] edges) {
         // TODO: your code here...
+        myEdges = edges;
     }
 
     /**
@@ -17,6 +18,8 @@ public class GraphSelectionSort {
      */
     public Integer[] getSorted() {
         // TODO: your code here...
+
+        return null;
     }
 
     /**
@@ -24,6 +27,7 @@ public class GraphSelectionSort {
      */
     public Edge[] getEdges() {
         // TODO: your code here...
+        return myEdges;
     }
 
     /**
@@ -32,6 +36,15 @@ public class GraphSelectionSort {
      */
     public void doSortIteration() {
         // TODO: your code here...
+        printNodes();
+        
+    }
+
+    public void printNodes(){
+        for(int i = 0; i < myEdges.length; i++){
+            System.out.println(myEdges[i].source.getValue());
+            System.out.println(myEdges[i].target.getValue());
+        }
     }
 
     /**
@@ -39,5 +52,6 @@ public class GraphSelectionSort {
      */
     public Boolean isSorted() {
         // TODO: your code here...
+        return false;
     }
 }

@@ -1,6 +1,6 @@
 /**
- * Name:
- * Student Number:
+ * Name: Giovanni Joubert
+ * Student Number: u18009035
  */
 
 public class Main {
@@ -12,10 +12,12 @@ public class Main {
         Tests.startTestCase("Graph 1");
         Vertex v1 = new Vertex(1);
         Vertex v2 = new Vertex(2);
+        Vertex v3 = new Vertex(3);
 
         Edge e12 = new Edge(v1, v2);
+        Edge e13 = new Edge(v1, v3);
 
-        Edge[] edges = new Edge[]{e12};
+        Edge[] edges = new Edge[]{e12, e13};
 
         GraphSelectionSort graphSelSort = new GraphSelectionSort(edges);
 

@@ -1,12 +1,13 @@
 /**
- * Name:
- * Student Number:
+ * Name: Giovanni Joubert
+ * Student Number: u18009035
  */
 
 public class Vertex {
-
+    private Integer storedVal;
     public Vertex(Integer value) {
         // TODO: your code here...
+        storedVal = value;
     }
 
     /**
@@ -14,5 +15,6 @@ public class Vertex {
      */
     public Integer getValue() {
         // TODO: your code here...
+        return storedVal;
     }
 }
